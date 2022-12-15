@@ -191,6 +191,15 @@
       "account_id": "aqomk87klbgkab0f",
       "user_id": "aqomkb2glbgka53v",
       "created_at": "2022-12-09T13:46:45.094Z"
+    },
+    {
+      "id": "aqomk34klbombynb",
+      "type": "income",
+      "name": "бабло",
+      "sum": 500,
+      "account_id": "aqomk87klbgkab0f",
+      "user_id": "aqomkb2glbgka53v",
+      "created_at": "2022-12-15T05:05:49.606Z"
     }
   ]
 }
