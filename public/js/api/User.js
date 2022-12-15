@@ -11,11 +11,7 @@ class User {
   static URL = '/user'
 
   static setCurrent(user) {
-    try {
-      localStorage.setItem('user', JSON.stringify(user))
-    } catch (error) {
-      console.log(error);
-    }
+    localStorage.setItem('user', JSON.stringify(user));
   }
 
   /**
@@ -31,11 +27,7 @@ class User {
    * из локального хранилища
    * */
   static current() {
-    try {
-      return JSON.parse(localStorage.user);
-    } catch {
-      return undefined;
-    }
+    return JSON.parse(localStorage.getItem('user'));
   }
 
   /**

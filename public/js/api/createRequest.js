@@ -5,7 +5,7 @@
 const createRequest = (options = {}) => {
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
-  
+
   if (options.method === 'GET') {
     let url = options.url;
 
