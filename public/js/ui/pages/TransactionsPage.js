@@ -177,11 +177,9 @@ class TransactionsPage {
    * */
   renderTransactions(data){
     const content = this.element.querySelector('.content');
-    content.innerHTML = '';
-    if (data.length) {
-      data.forEach(item => {
-        content.innerHTML += this.getTransactionHTML(item);
-      })
-    }
+    
+    content.innerHTML = data.reduce((acc, elem) => {
+      return acc + this.getTransactionHTML(elem);
+    }, '');
   }
 }
